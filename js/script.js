@@ -11,6 +11,9 @@ const app = new Vue({
         search() {
             const link = "https://source.unsplash.com/1600x900/?" + this.searchPic;
             document.getElementById("pic").src = link;
+        },
+        refresh() {
+            location.reload();
         }
     }
 })

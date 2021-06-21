@@ -17,7 +17,8 @@
         <section id="cerca">
             <h1>{{msg}}</h1>
             <input type="text" v-model="searchPic">
-            <div @click="search" id="show">Show</div>
+            <div @click="search" class="btn">Show</div>
+            <div @click="refresh" class="btn">Random</div>
         </section>
         
         <section id="cont-img">
