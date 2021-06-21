@@ -10,10 +10,7 @@ const app = new Vue({
     },
     methods: {
         search() {
-            let link = "https://source.unsplash.com/1600x900/?" + this.searchPic;
-            document.getElementById("pic").src = link;
-            console.log(this.searchPic);
-            
+            if(this.searchPic) document.getElementById("pic").src = "https://source.unsplash.com/1600x900/?" + this.searchPic + " " + Math.floor(Math.random() * 1000);
         },
         randomImg() {
             window.location.reload();
