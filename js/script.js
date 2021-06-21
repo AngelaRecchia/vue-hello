@@ -4,6 +4,13 @@ Bonus: Aggiungere alla pagina un’immagine, presa anch’essa da un data. */
 const app = new Vue({
     el: "#app",
     data: {
-        msg: "Hello"
+        msg: "Search pics",
+        searchPic: "" 
+    },
+    methods: {
+        search() {
+            const link = "https://source.unsplash.com/1600x900/?" + this.searchPic;
+            document.getElementById("pic").src = link;
+        }
     }
 })
