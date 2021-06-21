@@ -26,7 +26,9 @@ body {
     width: 79%;
     height: 100%;
     float: left;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
@@ -66,11 +68,4 @@ input:focus {
     height: 40px;
     width: max-content;
     cursor: pointer;
-}
-
-#load {
-    font-size: 50px;
-}
-.hidden {
-    display: none;
 }

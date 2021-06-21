@@ -4,9 +4,8 @@ Bonus: Aggiungere alla pagina un’immagine, presa anch’essa da un data. */
 const app = new Vue({
     el: "#app",
     data: {
-        msg: "Search pics",
-        searchPic: "",
-        load: "hidden"
+        msg: "Browse",
+        searchPic: ""
     },
     methods: {
         search() {
