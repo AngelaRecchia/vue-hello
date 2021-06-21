@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <title>Prova VueJS</title>
+    <title>Pix</title>
 </head>
 <body>
     
@@ -18,9 +18,13 @@
             <h1>{{msg}}</h1>
             <input type="text" v-model="searchPic">
             <div @click="search" id="show">Show</div>
+            <div id="load" :class="load">...</div>
         </section>
         
-        <img src=" " id="pic"> 
+        <section id="cont-img">
+            <img src="https://source.unsplash.com/random" id="pic">
+        </section>
+         
     </div>
 
     <script src="js/script.js"></script>

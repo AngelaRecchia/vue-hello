@@ -5,7 +5,8 @@ const app = new Vue({
     el: "#app",
     data: {
         msg: "Search pics",
-        searchPic: "" 
+        searchPic: "",
+        load: "hidden"
     },
     methods: {
         search() {
