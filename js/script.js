@@ -5,11 +5,12 @@ const app = new Vue({
     el: "#app",
     data: {
         msg: "Browse",
+        defaultImg: "https://source.unsplash.com/random",
         searchPic: ""
     },
     methods: {
         search() {
-            const link = "https://source.unsplash.com/1600x900/?" + this.searchPic;
+            let link = "https://source.unsplash.com/1600x900/?" + this.searchPic;
             document.getElementById("pic").src = link;
             console.log(this.searchPic);
             
